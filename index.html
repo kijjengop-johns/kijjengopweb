@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web site</title>
+    <style>
+      *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    scroll-behavior: smooth;
+header{
+        .background: #164e9c;
+        color:green ;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+      }
+      header p{
+        opacity: 0.85;
+        margin: 0.3rem 0;
+
+      }
+      body {
+        font-family:arial, sans-serif;
+line-height: 1.6;
+color: #24302a;
+background-color: #ffffffff;
+      }
+      h1, h2, h3{
+        line-height: 1.3;
+      }
+      h2{
+        margin-bottom: 20px;
+      }
+
+      header{
+background:#062e3b;
+color: rgb(153, 10, 10);
+padding: 18px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+text-align: center;
+      }
+      .logo h2{
+        font-size: 13px;
+      }
+      .logo p{
+        font-size: 13px;
+      }
+
+      nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      nav{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover{
+color: #facc15;
+      }
+      .menu-button{
+        display:none ;
+        padding:1opx 15px ;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      h1{
+        font-size: 1.6;
+        margin-bottom: o.2rem;
+      }
+      .hero{
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 70px 20px;
+        color: white;
+        background: 
+        linear-gradient(
+          rgba(0, 40, 25, 0.75),
+          rgba(0, 40, 25, 0.75)
+        ),
+        urlimages(4)jpeg;
+        background-size: ;
+        background-position: center;
+        
+      }
+.hero-content{
+  max-width: 800px;
+}
+  .welcome{
+    color: #15fa61;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+  }
+
+.hero h1{
+  font-size:clamp( 32px, 5vw, 55px) ;
+  margin: 15px 0;
+}
+.button{
+  display: inline-block;
+  background-color: #087f5b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.button:hover{
+  background-color: #065f46;
+}
+.secondary{
+  background-color: #facc15;
+  color: #173b2e;
+}
+
+.small-button{
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #087f5b;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+  
+.section{
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.section h2{
+  color: #062e3b;
+  font-size: 32px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+}
+.light{
+  background-color: #f0f7f3;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+.cards{
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgb(0,  0, 0, 0.08);
+  border-bottom: 4px solid #087f5b;
+}
+.card h3{
+  color: #087f5b;
+  margin-bottom: 12px;
+}
+.card:hover{
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+.note{
+  font-size: 14px;
+  color:#52645a;
+  margin-top: 25px;
+
+}
+
+      header p{
+        font-size: 0.95rem;
+        opacity: 0.9;
+      }
+      section{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem;
+      }
+
+      section h2{
+        color: #1a365d;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+.infro-box{
+background:white ;
+border-radius: 10px;
+padding: 1.3rem;
+margin-bottom: 1rem;
+text-align: center;
+}
+gallery{
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgb(0,  0, 0, 0.01);
+}
+.gallery-item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+.gallery img {
+width: 100%;
+  height:230px ;
+  object-fit: cover;
+  display: block;
+}
+.gallery-item p{
+  padding: 12px;
+  font-weight: bold;
+  color: #062e3b;
+}
+contact
+form{
+  max-width: 600px;
+  margin: 25px auto 0;
+  text-align: left;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(0,  0, 0, 0.08);
+}
+form label{
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size:16px ;
+}
+form input,
+form textarea{
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  border-radius:5px ;
+  font-size: 16px;
+}
+form textarea{
+  height: 130px;
+  resize: vertical;
+}
+form bottom{
+  margin-top: 20px;
+}
+#response{
+  font-weight: bold;
+  color: #087f5d;
+}
+
+      footer{
+        background: #1a365d;
+        color:white ;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+      }
+      footer p{
+        opacity: 0.85;
+        margin: 0.3rem 0;
+      }
+
+      @media(max-width:900px){
+        header{
+          align-items: center;
+        }
+        .menu-button{
+          display: block;
+          flex-direction: column;
+          width: 100%;
+          padding: 15px 0;
+        }
+        nav.show{
+          display: flex;
+        }
+        .card,
+        .gallery{
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+
+      @media(max-width:600px){
+        .card,
+        .gallery{
+          grid-template-columns: 1fr;
+        }
+        .section{
+          padding: 45px 6%;
+        }
+        .hero{
+          min-height: 420px;
+        }
+        .heroh1{
+          front-size: 32px;
+        }
+        header{
+          padding:15px 5%;
+        }
+      }
+    </style>
+</head>
+<body>
+
+<style>
+
+  }
+</style>
+<style>
+  .header{
+    background-color: rgb(27, 27, 141);
+  }
+</style>
+ <!--HEADER--> 
+ <hearder>
+<div class="logo">
+    <h2><center><img src="web pics/images.png"></center>
+    </h2>
+    <P > KIGALAMA<br>
+      SEVENTH-DAY ADVENTIST CHURH
+    </P>
+  </div>
+ </hearder>
+  <h1><center><b><u>
+    WELCOME TO SDA KIGALAMA CHURCH</b></u> </h1>
+    <hr>  
+  <P><i><center>I LIFT UP MY EYES TO THE MOUNTAIN WHERE MY HELP COMES FROM... </i> (PLSM 120)</P></center>
+  <nav id="navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#sermons"> Sermons</a>
+    <a href="#gallery"> Gallery</a>
+    <a href="#events"> Events</a>
+    <a href="#contact Us">Contact Us </a>
+  </nav>
+<!--HOME PAGE-->
+<section ID="Home" class="hero">
+  
+    <img src="web pics/fellowship.jpg">
+  
+  <div class="hero-content">
+    <p class="welcome">WELCOME TO </p> 
+    <h1 ADVENTIST CHURH KIGALAMA </h1>
+    <P> <i>A place of worship, hope, love, and spiritualgrowth.
+      come and experience God's love with us</i>
+    </P>
+    <a href="#about" class="button">Learn more
+    </a>
+     <a href="#contact" class="button secondary">
+      Jion us
+     </a>
+  </div>
+</section>
+
+<!--ABOUT US PAGE-->
+<section id="about" class="section">
+  <h2><center>
+    About Our Church </h2>
+    <p>
+      <i><center>SDA Kigalama Church is a christain worship community committed to sharing<br> the love of christ, studying the Bible and encouraging spiritual growth.</center></i>
+    </p>
+    <div class="cards">
+      <div class="cards">
+        <h3><center>Our Mission</center></h3>
+        <p>
+        <i>  <center>To share the gospel of Jesus Christ and help people prepare for the His second coming.</center> </i>
+        </p>
+      </div>
+      <div class="card">
+        <h3><center>
+      Our Vision</h3>
+        <p><center><i>
+          to build  loving church community that serves God and supports others.</i>
+       </i> </center></p>
+      <div class="card">
+        <h3><center>Our Values</center></h3>
+        <p>
+        <center> <i> Faith, love, prayer, service, unity, and obedience toGod's Word</i></center>
+        </center>></p>
+      </div>
+</section>
+
+
+<style>
+  .leader-card{
+    background: #ffffff;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 04px 15px rgba(160, 22, 22, 0.08);
+  }
+  .leader-card img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .leadership-note{
+    text-align: center;
+    list-style:;
+    margin-top: 30px;
+    color: #0d6635;
+  }
+  .leader-card h3{
+    color: #3c685b;
+    margin-bottom: 10px;
+  }
+</style>
+<!--LEADERSHIP PAGE-->
+<section id="leadership" class="section">
+<h2><center>Church Leadership</center></h2>
+<p><i>Serving God and His people with love<br>For God loved the world...<br>In the book of John</p></i>
+<p><i>1cor13:1<br>I may able to speak the languages of men and even of agles, but if I have no love my speech is no more than a noisy gong  or a clanging bell.
+</i></p>
+
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="section title">Our Church Leaders</h2>
+    <div class="Leader-card">
+      <h3>
+        Church Pastor
+      </h3>
+      <P><I>spiritual leadership and preaching</I></P>
+ </div>
+      <div class="leader-card">
+        <h3>church Elder</h3>
+        <p><i>supporting worship and church activities</i></p>
+    </div>
+    <div class="leader-card">
+      <h3>Church Decon</h3>
+      <p><i>Supporting practical church services</i></p>
+    </div>
+
+    </div>
+  </div>
+</section>
+<div class="card">
+    <div class="card">
+
+<!--SERVICE PAGE-->
+<section id="services" class="section light">
+  <h2><center>Our worship services</center></h2>
+  <div class="card">
+    <div class="card">
+    <h3>
+      <center>Sabbath School</center>
+    </h3>
+    <p>
+     <center> Bible study, fellowship and laerning a God's Word togther.</center>
+    </p>
+    </div>
+    <div class="card">
+    <h3><center>Divine Worship</center></h3>
+    <p><center>
+      Jion us for prayer, singing, preaching and worship </center>
+    </p>
+    </div>
+    <div class="card">
+      <h3>
+       <center> Prayer Meetings</center>
+      </h3>
+    <p>
+     <center> Come togther for prayer, encouragement and spiritualgrowth.</center>
+    </p>
+    </div>
+  </div>
+  <p class="note">
+    <center>Contact the church for the confirmed worship schedule and service time.</center>
+  </p>
+</section>
+
+
+<!--SERMONS PAGE-->
+<section id="Sermons" class="section">
+<h2><center>Sermon and Bible Study</center></h2>
+<div class="card">
+    <div class="card">
+<p><center>
+  Growth spiritually through Bible study,
+  Chistain teaching andmessages of hope.
+</center></p>
+<div class="cards">
+  <h3><center>
+    Faith in God.
+  </center></h3>
+  <p><center>leran to trust in God in every situation.</center></p>
+  <a href="#sermon" class="small-button">
+    Learn More
+  </a>
+</div>
+<div class="card">
+  <h3><center>Love One Another</center></h3>
+  <p><center>
+    Discover the importance of christain Love.
+  </center></p>
+  <a href="#contact" class="small-button">
+    Learn More
+  </a>
+</div>
+</section>
+
+  <!--GALLERY PAGE-->
+  <section id="gallery" class="section light">
+    <h2>
+      Our Church Gallery 
+    </h2>
+    <p>
+      Moments of Bible study, worship, fellowship and services.
+    </p>
+    <div class="gallery">
+      <div class="gallery item">
+        <img
+        src="web pics/worship.jpg"
+        >
+        <p>worship
+        </p>
+    </div>
+    <div class="gallery-item">
+      <img
+      src="web pics/images (6).jpeg"
+      >
+      <p>Bible Study</p> 
+    </div>
+    </section>
+
+
+    <!--EVENTS PAGE-->
+    <section id="events" class="section.">
+<h2>Church Events</h2>
+<div class="cards">
+  <div class="cards">
+    <h3>Prayer Week</h3>
+    <p><i>A time for prayer, Bible study and spiritual renewal.</i></p>
+</div>
+<div class="card">
+  <h3>Community Outreach</h3>
+  <p><i> Sharing kindness, hope and support with our community.</i></p>
+</div>
+<div class="card">
+  <h3>Youth Fellowship</h3>
+  <p><i> Activities that encourage young people to grow in faith and service.</i></p>
+</div>
+
+</div>
+    </section>
+
+  
+
+<!--CONTACT US PAGE-->
+<section id="Contact" class="section light">
+  <h2> Contact Us</h2><p>
+    <p>Location: Mityana-Kigalama</p>
+    <p>P.o Box: 098,</p>
+     <p>Kampala-Uganda</p>
+     <p>Email:sdakigalama@gmail.come</p>
+     <p>Tel:+256708835963 - +256750612937</p>
+  </p>
+  <p>We welcome your questions, prayer requests and messages.
+  </p>
+  <from id="ContactForm">
+    <label for="email">Your Email</label>
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter your email"
+    required
+    >
+    <label for="message">Your message</label>
+    <textarea
+    id="message"
+    placeholder="write your message here"
+    required
+    ></textarea>
+    <button type="submit" class="button">
+      Send Message
+    </button>
+</from>
+    <p id="response"></p>
+
+</section>
+  
+
+
+
+  <!--FOOTER-->
+  <footer>
+    <h3>SDA Kigalama Church</h3>
+    <p>Sharing God's love and spreading the gospel.</p>
+    <p>&copy; <span id="year"></span>
+    SDA Kigalama Church. All rights reserved.
+  </p>
+  <a href="#home" class="back-to-top">
+    Back-To-Top
+  </a>
+  </footer>
+
+<script src="script.js">
+  function toggleMenu(){
+    const navigation = document.getElementById("navigation");
+    navigation.classList.toggle("show");
+
+  }
+</script>
+
+</body>
+</html>
